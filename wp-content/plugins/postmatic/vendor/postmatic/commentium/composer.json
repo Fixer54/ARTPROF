@@ -1,0 +1,31 @@
+{
+  "name": "postmatic/commentium",
+  "type": "library",
+  "license": "GPL-2.0+",
+	"version": "1.0.3",
+  "authors": [
+    {
+      "name": "Postmatic",
+      "homepage": "https://gopostmatic.com/",
+      "role": "Developer"
+    },
+    {
+      "name": "Dylan Kuhn",
+      "homepage": "http://www.cyberhobo.net",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+	  "postmatic/comment-iq-api-client": "^0.1.1"
+  },
+  "autoload": {
+	  "psr-4": {
+		  "Postmatic\\Commentium\\": "source"
+	  }
+  },
+  "autoload-dev": {
+	  "psr-4": {
+		  "Postmatic\\Commentium\\Unit_Tests\\": "tests/phpunit"
+	  }
+  }
+}

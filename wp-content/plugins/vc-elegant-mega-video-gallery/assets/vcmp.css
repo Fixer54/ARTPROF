@@ -1,0 +1,117 @@
+[class*="icon-vc-doughnut-page"],
+[class*="icon-vc-formidable-page"],
+[class*="icon-vc-gmap-page"],
+[class*="icon-vc-social-page"],
+[class*="icon-vc-dropcap-page"],
+[class*="icon-vc-socialallinone-page"],
+[class*="icon-vc-imageeffects-page"],
+[class*="icon-vc-animbuttons-page"],
+[class*="icon-vc-imageviewer-page"],
+[class*="icon-vc-imagepan-page"],
+[class*="icon-vc-flexslider-page"],
+[class*="icon-vc-contactform7-page"],
+[class*="icon-vc-owlslider-page"],
+[class*="icon-vc-typed-page"],
+[class*="icon-vc-teammembers-page"],
+[class*="icon-vc-teamcard-page"],
+[class*="icon-vc-teamcardclean-page"],
+[class*="icon-vc-team-page"],
+[class*="icon-vc-services-page"],
+[class*="icon-vc-perpectivecard-page"],
+[class*="icon-vc-owlcarousel-page"],
+[class*="icon-vc-kenburnslider-page"],
+[class*="icon-vc-imageoverlay-page"],
+[class*="icon-vc-imagecaptions-page"],
+[class*="icon-vc-gridgallery-page"],
+[class*="icon-vc-gummyslider-page"],
+[class*="icon-vc-glideslider-page"],
+[class*="icon-vc-contactformseven-page"],
+[class*="icon-vc-calltoaction-page"],
+[class*="icon-vc-hoverboxes-page"],
+[class*="icon-vc-highlightcard-page"],
+[class*="icon-vc-beforeafter-page"],
+[class*="icon-vc-profilebox-page"],
+[class*="icon-vc-gallerybullrypopup-page"],
+[class*="icon-vc-canvasanime-page"],
+[class*="icon-vc-expandingrid-page"],
+[class*="icon-vc-intensegallery-page"],
+[class*="icon-vc-zoomwall-page"],
+[class*="icon-vc-projectlist-page"],
+[class*="icon-vc-counter-page"],
+[class*="icon-vc-quote-slider-page"],
+[class*="icon-vc-get_posts-page"],
+[class*="icon-vc-imagehovereffects-page"],
+[class*="icon-vc-imageskew-page"],
+[class*="icon-vc-colorednews-page"],
+[class*="icon-vc-floatingnews-page"],
+[class*="icon-vc-pricetableshiny-page"],
+[class*="icon-vc-pricetablesofty-page"],
+[class*="icon-vc-simplenewsticker-page"],
+[class*="icon-vc-display_posts-page"],
+[class*="icon-vc-photoframe-page"],
+[class*="icon-vc-instagramfeed-page"],
+[class*="icon-vc-bgperspective-page"],
+[class*="icon-vc-processtimeline-page"],
+[class*="icon-vc-pricetable_modern-page"],
+[class*="icon-vc-pricetable_monthyear-page"],
+[class*="icon-vc-googlemapsmarker-page"],
+[class*="icon-vc-imagemagnify-page"],
+[class*="icon-vc-deviceslider-page"],
+[class*="icon-vc-overlaymenu-page"],
+[class*="icon-vc-canvaslines-page"],
+[class*="icon-vc-woocommerce-page"],
+[class*="icon-vc-megamenu-page"],
+[class*="icon-vc-floatingcontact-page"],
+[class*="icon-vc-parallaxcanvasbg-page"],
+[class*="icon-vc-vcmp_flipgrid-page"],
+[class*="icon-vc-canvasheart-page"],
+[class*="icon-vc-hexagongrid-page"],
+[class*="icon-vc-canvasconfetti-page"],
+[class*="icon-vc-vcmpfullpage_parallax-page"],
+[class*="icon-vc-vcmpfullpage_parallax-page"],
+[class*="icon-vc-vcmp_fullscreen_slider-page"],
+[class*="icon-vc-videogallery-page"]
+{
+	background-image: url('img/vc-elegant-mega-pack.png') !important;
+	border-color: transparent;
+	background-repeat: no-repeat;
+}
+
+/* Vcmp Social */
+.social-icons li {
+	padding: 5px;
+	list-style-type: none;
+}
+.horizontal-social li {
+	display: inline;
+}
+.vcmp-socials li {
+    list-style-type: none;
+}
+.vcmp-socials a {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 2px;
+	background: 0 0;
+}
+.vcmp-socials i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 31px;
+	transform: translate( -50%, -50% );
+}
+.circle-outline-soc a,
+.circle-soc a {
+	border-radius: 50%
+}
+.circle-soc a,
+.boxed-soc a {
+	background: #000;
+}
+.circle-outline-soc a,
+.boxed-outline-soc a {
+	border: 1px solid #333;
+}

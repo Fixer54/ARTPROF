@@ -1,0 +1,376 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fast Gallery for VC\n"
+"POT-Creation-Date: 2016-01-07 18:54+0100\n"
+"PO-Revision-Date: 2016-01-07 18:54+0100\n"
+"Last-Translator: \n"
+"Language-Team: ad-theme <support@ad-theme.com>\n"
+"Language: ENG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: __;_e;_n;_x\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../fastgallery_vc.php:44 ../fastgallery_vc.php:50 ../mosaic_class.php:25
+msgid "Fast Gallery"
+msgstr ""
+
+#: ../fastgallery_vc.php:45
+msgid "Build your gallery"
+msgstr ""
+
+#: ../fastgallery_vc.php:55 ../mosaic_class.php:30
+msgid "Gallery Name"
+msgstr ""
+
+#: ../fastgallery_vc.php:62 ../mosaic_class.php:37
+msgid "Show Name"
+msgstr ""
+
+#: ../fastgallery_vc.php:72
+msgid "Columns"
+msgstr ""
+
+#: ../fastgallery_vc.php:89 ../mosaic_class.php:60
+msgid "Type Gallery"
+msgstr ""
+
+#: ../fastgallery_vc.php:105
+msgid "Masonry / Grid"
+msgstr ""
+
+#: ../fastgallery_vc.php:115
+msgid "Responsive / Fluid"
+msgstr ""
+
+#: ../fastgallery_vc.php:125 ../mosaic_class.php:120
+msgid "Over Image"
+msgstr ""
+
+#: ../fastgallery_vc.php:135
+msgid "Show Caption Image"
+msgstr ""
+
+#: ../fastgallery_vc.php:145
+msgid "One Thumbs for Gallery"
+msgstr ""
+
+#: ../fastgallery_vc.php:155
+msgid "Lazy Load"
+msgstr ""
+
+#: ../fastgallery_vc.php:165
+msgid "Lazy Load Animation (Fade in Effect)"
+msgstr ""
+
+#: ../fastgallery_vc.php:179 ../mosaic_class.php:130
+msgid "Pagination"
+msgstr ""
+
+#: ../fastgallery_vc.php:189 ../mosaic_class.php:140
+msgid "Number of images for each page"
+msgstr ""
+
+#: ../fastgallery_vc.php:192 ../mosaic_class.php:143
+msgid "For example: 15 (Default value is 10)"
+msgstr ""
+
+#: ../fastgallery_vc.php:201 ../mosaic_class.php:152
+msgid "Upload Your Images"
+msgstr ""
+
+#: ../fastgallery_vc.php:203 ../mosaic_class.php:154
+msgid ""
+"If you get image from library (not uploaded) we reccomended you to "
+"regenerate your thumbs"
+msgstr ""
+
+#: ../fastgallery_vc.php:210 ../mosaic_class.php:161
+msgid "Style"
+msgstr ""
+
+#: ../fastgallery_vc.php:232 ../mosaic_class.php:180
+msgid "Main Color"
+msgstr ""
+
+#: ../fastgallery_vc.php:240 ../mosaic_class.php:188
+msgid "Opacity"
+msgstr ""
+
+#: ../fastgallery_vc.php:243 ../mosaic_class.php:191
+msgid "Main Color Opacity (0.1 to 1)"
+msgstr ""
+
+#: ../fastgallery_vc.php:249 ../mosaic_class.php:197
+msgid "Secondary Color"
+msgstr ""
+
+#: ../fastgallery_vc.php:257 ../mosaic_class.php:205
+msgid "Custom spacing between the photos"
+msgstr ""
+
+#: ../fastgallery_vc.php:268 ../mosaic_class.php:216
+msgid "spacing between the photos"
+msgstr ""
+
+#: ../fastgallery_vc.php:271 ../fastgallery_vc.php:284 ../mosaic_class.php:219
+#: ../mosaic_class.php:259
+msgid "Enter pixel value (examples: 20)"
+msgstr ""
+
+#: ../fastgallery_vc.php:281 ../mosaic_class.php:256
+msgid "Gallery Name Font Size"
+msgstr ""
+
+#: ../fastgallery_vc.php:294 ../mosaic_class.php:269
+msgid "Gallery Name Font Color"
+msgstr ""
+
+#: ../fastgallery_vc.php:306 ../mosaic_class.php:281
+msgid "Gallery Name Text Align"
+msgstr ""
+
+#: ../fastgallery_vc.php:322
+msgid "Image Lightbox"
+msgstr ""
+
+#: ../fastgallery_vc.php:337 ../mosaic_class.php:297
+msgid "Pagination Style"
+msgstr ""
+
+#: ../fastgallery_vc.php:353 ../mosaic_class.php:316
+msgid "Animation Speed"
+msgstr ""
+
+#: ../fastgallery_vc.php:369 ../fastgallery_vc.php:446
+#: ../fastgallery_vc.php:535 ../mosaic_class.php:332 ../mosaic_class.php:408
+msgid "Autoplay"
+msgstr ""
+
+#: ../fastgallery_vc.php:384 ../fastgallery_vc.php:461 ../mosaic_class.php:347
+#: ../mosaic_class.php:423
+msgid "Autoplay Time"
+msgstr ""
+
+#: ../fastgallery_vc.php:387 ../fastgallery_vc.php:464
+#: ../fastgallery_vc.php:679 ../mosaic_class.php:350 ../mosaic_class.php:426
+#: ../mosaic_class.php:520
+msgid "time in ms (1000 = 1sec). Example: 2000"
+msgstr ""
+
+#: ../fastgallery_vc.php:397 ../mosaic_class.php:360
+msgid "Show Title"
+msgstr ""
+
+#: ../fastgallery_vc.php:412 ../mosaic_class.php:375
+msgid "Show Social"
+msgstr ""
+
+#: ../fastgallery_vc.php:429 ../mosaic_class.php:392
+msgid "Thumbs"
+msgstr ""
+
+#: ../fastgallery_vc.php:435
+msgid "if you have selected lazyload effect is automatically set on \"OFF\""
+msgstr ""
+
+#: ../fastgallery_vc.php:474 ../mosaic_class.php:436
+msgid "Counter"
+msgstr ""
+
+#: ../fastgallery_vc.php:489 ../mosaic_class.php:451
+msgid "History"
+msgstr ""
+
+#: ../fastgallery_vc.php:491 ../mosaic_class.php:453
+msgid "Enable/disable HTML5 history using hash urls"
+msgstr ""
+
+#: ../fastgallery_vc.php:505 ../fastgallery_vc.php:644 ../mosaic_class.php:467
+msgid "Loop"
+msgstr ""
+
+#: ../fastgallery_vc.php:550
+msgid "Nav"
+msgstr ""
+
+#: ../fastgallery_vc.php:566
+msgid "Nav Position"
+msgstr ""
+
+#: ../fastgallery_vc.php:581
+msgid "Allow fullscreen"
+msgstr ""
+
+#: ../fastgallery_vc.php:596
+msgid "Transition"
+msgstr ""
+
+#: ../fastgallery_vc.php:612
+msgid "Arrow"
+msgstr ""
+
+#: ../fastgallery_vc.php:627
+msgid "Fit"
+msgstr ""
+
+#: ../fastgallery_vc.php:661 ../mosaic_class.php:502
+msgid "Mode"
+msgstr ""
+
+#: ../fastgallery_vc.php:676 ../mosaic_class.php:517
+msgid "Speed"
+msgstr ""
+
+#: ../fastgallery_vc.php:689 ../mosaic_class.php:530
+msgid "Thumbnail"
+msgstr ""
+
+#: ../fastgallery_vc.php:704 ../mosaic_class.php:545
+msgid "Controls"
+msgstr ""
+
+#: ../fastgallery_vc.php:721 ../mosaic_class.php:562
+msgid "Target"
+msgstr ""
+
+#: ../fastgallery_vc.php:738
+msgid "Grid Thumbnails Size"
+msgstr ""
+
+#: ../fastgallery_vc.php:756
+msgid "Masonry Thumbnails Size"
+msgstr ""
+
+#: ../fastgallery_vc.php:774
+msgid "Lightbox Thumbs"
+msgstr ""
+
+#: ../fastgallery_vc.php:789
+msgid "Active Custom Responsive"
+msgstr ""
+
+#: ../fastgallery_vc.php:804
+msgid "Smartphone Portrait"
+msgstr ""
+
+#: ../fastgallery_vc.php:826
+msgid "Smartphone Landscape"
+msgstr ""
+
+#: ../fastgallery_vc.php:848
+msgid "Tablet Portrait"
+msgstr ""
+
+#: ../fastgallery_vc.php:870
+msgid "Tablet Landscape"
+msgstr ""
+
+#: ../fastgallery_vc.php:892
+msgid "Desktop (min value 640px - max value 1024px)"
+msgstr ""
+
+#: ../fastgallery_vc.php:914
+msgid "Desktop (max 639px)"
+msgstr ""
+
+#: ../fastgallery_vc.php:939 ../mosaic_class.php:610
+msgid "Animate"
+msgstr ""
+
+#: ../fastgallery_vc.php:942 ../mosaic_class.php:613
+msgid "Off"
+msgstr ""
+
+#: ../fastgallery_vc.php:943 ../mosaic_class.php:614
+msgid "On"
+msgstr ""
+
+#: ../fastgallery_vc.php:951 ../mosaic_class.php:622
+msgid "Animate Effects"
+msgstr ""
+
+#: ../fastgallery_vc.php:963 ../mosaic_class.php:634
+msgid "Animate Delay (ms)"
+msgstr ""
+
+#: ../fastgallery_vc.php:1035 ../mosaic_class.php:692
+#, php-format
+msgid ""
+"<strong>%s</strong> requires <strong><a href=\"http://codecanyon.net/item/"
+"visual-composer-page-builder-for-wordpress/242431?ref=ad-theme\" target="
+"\"_blank\">Visual Composer</a></strong> plugin to be installed and activated "
+"on your site."
+msgstr ""
+
+#: ../medias_fields.php:4
+msgid "Image Link"
+msgstr ""
+
+#: ../mosaic_class.php:19
+msgid "Fast Gallery Mosaic"
+msgstr ""
+
+#: ../mosaic_class.php:20
+msgid "Build your mosaic gallery"
+msgstr ""
+
+#: ../mosaic_class.php:47
+msgid "Layout"
+msgstr ""
+
+#: ../mosaic_class.php:73
+msgid "Standard Image Height"
+msgstr ""
+
+#: ../mosaic_class.php:87
+msgid "Custom Image Height"
+msgstr ""
+
+#: ../mosaic_class.php:90
+msgid "height in px . Example: 200"
+msgstr ""
+
+#: ../mosaic_class.php:99
+msgid "Fix Last Image"
+msgstr ""
+
+#: ../mosaic_class.php:105
+msgid ""
+"Sometimes there is just one image on the last row and it gets blown up to a "
+"huge size to fit the parent div width. To stop this behaviour, set this to ON"
+msgstr ""
+
+#: ../mosaic_class.php:110
+msgid "Responsive / Mosaic"
+msgstr ""
+
+#: ../mosaic_class.php:229
+msgid "Icon Image Lightbox"
+msgstr ""
+
+#: ../mosaic_class.php:244
+msgid "Icon Image Lightbox Width"
+msgstr ""
+
+#: ../mosaic_class.php:485
+msgid "Gallery"
+msgstr ""
+
+#: ../mosaic_class.php:579
+msgid "Image Lightbox Size"
+msgstr ""
+
+#: ../mosaic_class.php:595
+msgid "SEO Setting"
+msgstr ""
+
+#: ../mosaic_class.php:601
+msgid ""
+"If you set ON you need to insert all ALT and TITLE Tags image for correct "
+"settings"
+msgstr ""

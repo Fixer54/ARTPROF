@@ -1,0 +1,108 @@
+/* -----------------------------------------------------------------------------
+
+  VIDEO GALLERY
+  
+----------------------------------------------------------------------------- */
+.vc_element.vc_video_gallery_content {
+    min-height: auto !important;
+}
+.vcmp-video-selected {
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+ }
+        
+.vcmp-video-iframe {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	margin-bottom: 10px;
+}
+        
+.vcmp-video-iframe iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+        
+.vcmp-video-thumbnails {
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+
+.vcmp-video-thumb {
+	display: inline-table;
+	height: auto;
+	overflow: hidden;
+	width: 24.5%;
+	margin-bottom: 20px;
+	transition: all 0.2s ease-in 0s;
+	cursor:pointer;
+}
+.vcmp-video-thumb:hover {
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(221,221,221,0.65);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(221,221,221,0.65);
+	box-shadow: 0px 0px 10px 0px rgba(221,221,221,0.65);
+}
+
+.vcmp-video-thumb img {
+	background-color: #d8d9da;
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px !important;
+}
+
+.vcmp-video-thumb iframe {
+	display: none;
+}
+
+.vcmp-video-thumb,
+.vcmp-video-selected {
+	padding: 10px;
+}
+
+.vcmp-video-thumb h5.description {
+	display:inline-table;
+	margin: 0;
+	font-size: 12px;
+	line-height: inherit !important;
+	text-transform: none !important;
+}
+
+.vcmp-video-thumb h1.name {
+	display:table-cell;
+	font-size: 14px;
+	font-weight: 600 !important;
+    line-height: inherit !important;
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+    text-transform: none !important;
+}
+
+.active {
+	box-shadow: 0 0 2px #898989;
+}
+
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 960px) {
+	.vcmp-video-thumb {
+		display: block;
+		height: auto;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	
+	.vcmp-video-thumb img {
+		float: left;
+		height: auto;
+		margin-bottom: 5px !important;
+		margin-right: 20px;
+		width: 25% !important;
+	}
+}

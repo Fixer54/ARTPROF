@@ -1,0 +1,241 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Elegant Mega Addons for Visual Composer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-05 16:35-0000\n"
+"PO-Revision-Date: 2016-09-05 16:36-0000\n"
+"Last-Translator: \n"
+"Language-Team: ThemeofWP.com <info@themeofwp.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: elegant_mega_addons.php:201 elegant_mega_addons.php:209
+msgid "Invalid request!"
+msgstr ""
+
+#: elegant_mega_addons.php:251 elegant_mega_addons.php:370
+msgid "Module"
+msgstr ""
+
+#: elegant_mega_addons.php:252 elegant_mega_addons.php:371
+msgid "Description"
+msgstr ""
+
+#: elegant_mega_addons.php:285
+msgid "No description available"
+msgstr ""
+
+#: elegant_mega_addons.php:301
+msgid "Deactivate"
+msgstr ""
+
+#: elegant_mega_addons.php:317
+msgid "Activate"
+msgstr ""
+
+#: elegant_mega_addons.php:329
+msgid "Version"
+msgstr ""
+
+#: elegant_mega_addons.php:338 elegant_mega_addons.php:344
+msgid "By"
+msgstr ""
+
+#: elegant_mega_addons.php:426
+#, php-format
+msgid ""
+"The module %s has been deactivated due to an error: Module file does not "
+"exist."
+msgstr ""
+
+#: elegant_mega_addons.php:467
+msgid "Module activated."
+msgstr ""
+
+#: elegant_mega_addons.php:484
+msgid "Module deactivated."
+msgstr ""
+
+#: elegant_mega_addons.php:533
+#, php-format
+msgid ""
+"This plugin requires WPBakery Visual Composer plugin version %s or greater"
+msgstr ""
+
+#: elegant_mega_addons.php:561
+#, php-format
+msgid ""
+"<strong>%s</strong> requires <strong><a href=\"http://bit.ly/1UNVpys\" "
+"target=\"_blank\">Visual Composer</a></strong> plugin to be installed and "
+"activated on your site."
+msgstr ""
+
+#: lib/class-vcmp-module.php:27
+msgid "Error: Setting field type is empty!"
+msgstr ""
+
+#: lib/class-vcmp-module.php:32
+msgid "Error: Setting field name is empty!"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:49
+msgid "Video Gallery"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:51
+msgid "Add video gallery to your page."
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:56
+#: modules/vcmp-videogallery/vcmp-videogallery.php:125
+msgid "Elegant Mega Addons"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:61
+msgid "Main Video Source"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:64
+#: modules/vcmp-videogallery/vcmp-videogallery.php:135
+msgid "None"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:65
+#: modules/vcmp-videogallery/vcmp-videogallery.php:136
+msgid "Youtube"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:66
+#: modules/vcmp-videogallery/vcmp-videogallery.php:137
+msgid "Vimeo"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:68
+msgid "Select the type of the main video source."
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:74
+#: modules/vcmp-videogallery/vcmp-videogallery.php:145
+msgid "Main Youtube Video ID"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:81
+msgid "Please enter the main youtube video url. Ex:r-neGA1blsE"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:87
+#: modules/vcmp-videogallery/vcmp-videogallery.php:158
+msgid "Main Vimeo Video ID"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:94
+msgid "Please enter the main vimeo video id. Ex:163662857"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:100
+#: modules/vcmp-videogallery/vcmp-videogallery.php:233
+msgid "Extra Class Name"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:102
+#: modules/vcmp-videogallery/vcmp-videogallery.php:235
+msgid "Extra class to be customized via CSS"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:107
+msgid "Custom Design Options"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:109
+msgid "Design options"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:122
+msgid "Video Item"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:124
+msgid "Add video item to your gallery."
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:132
+msgid "Video Source"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:139
+msgid "Select the type of the child video source."
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:152
+msgid "Please enter the youtube video url. Ex:r-neGA1blsE"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:165
+msgid "Please enter the vimeo video id. Ex:163662857"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:171
+msgid "Video Thumbnail Image"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:174
+msgid "Please choose your video thumbnail image."
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:180
+msgid "Video Thumbnail Title"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:183
+msgid "Please enter the video thumbnail title."
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:188
+msgid "Video Thumbnail Title Color"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:191
+msgid "Please choose the video thumbnail title color."
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:197
+msgid "Video Thumbnail Title Font Size"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:200
+msgid "Please enter the video thumbnail title font size. Ex:14px"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:206
+msgid "Video Thumbnail Sub Title"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:209
+msgid "Please enter the video thumbnail sub title."
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:215
+msgid "Video Thumbnail Sub Title Color"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:218
+msgid "Please choose the video thumbnail sub title color."
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:224
+msgid "Video Thumbnail Sub Title Font Size"
+msgstr ""
+
+#: modules/vcmp-videogallery/vcmp-videogallery.php:227
+msgid "Please enter the video thumbnail sub title font size. Ex:11px"
+msgstr ""

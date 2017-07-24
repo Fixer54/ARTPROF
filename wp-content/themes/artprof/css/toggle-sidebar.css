@@ -1,0 +1,410 @@
+body {
+    overflow-x: hidden;
+}
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	position: relative;
+}
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    width: 75%;
+    height: 100%;
+    overflow-y: auto;
+    background: #f6f6f6;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	padding: 50px 10%;
+	border-right: 1px solid #e1e1e1;
+	box-sizing: border-box;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+	top: 0;
+}
+/*body.home #sidebar-wrapper,*/
+#wrapper.toggled #sidebar-wrapper {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+	overflow: visible;
+	position: absolute;
+}
+body:not(.home) #page-content-wrapper {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    width: 100%;
+    position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 80px 0 50px 0;
+}
+.logo {
+	display: block;
+	margin: 0 auto;
+	max-width: 200px;
+	position: relative;
+	z-index: 9999;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+	float: left;
+	top: -25px;
+}
+.mobile-logo {
+	top: 15px;
+	left: 15px;
+	position: absolute;
+	max-width: 150px;
+}
+.home .mobile-logo {
+	display: none;
+}
+#nav-bttn {
+    position: fixed;
+    display: block;
+    top: 15px;
+    right: 15px;
+    width: 25px;
+    height: 23px;
+    z-index: 9999;
+    left: auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+}
+@media screen and (max-width: 782px) {
+	body.logged-in #nav-bttn {
+		top: 61px !important;
+	}
+}
+#nav-bttn, .nav-bttn-line {
+    -webkit-transition: all .25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all .25s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.nav-bttn-line {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #777;
+}
+#nav-bttn-line-one {
+    -webkit-transform: translateY(-9px);
+    transform: translateY(-9px);
+}
+#nav-bttn-line-two {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+}
+#nav-bttn-line-three {
+    -webkit-transform: translateY(9px);
+    transform: translateY(9px);
+}
+
+#nav-menu.active #nav-bttn {
+    position: fixed;
+}
+#nav-bttn.active #nav-bttn-line-one {
+    -webkit-transform: rotate(-225deg) translateY(0px);
+    -ms-transform: rotate(-225deg) translateY(0px);
+    transform: rotate(-225deg) translateY(0px);
+}
+#nav-bttn.active .nav-bttn-line {
+       background-color: #777;
+}	
+#nav-bttn.active #nav-bttn-line-two {
+       opacity: 0;
+}
+#nav-bttn.active #nav-bttn-line-three {
+       -webkit-transform: rotate(225deg) translateY(0px);
+       -ms-transform: rotate(225deg) translateY(0px);
+       transform: rotate(225deg) translateY(0px);
+}
+
+
+
+/***** ============================================================================================
+SIDEBAR  
+============================================================================================ *****/
+
+.sidebar-nav {
+    width: 100%;
+    margin: 0;
+    padding: 0 4% 10% 0;
+	margin: 25px auto 0 auto;
+    list-style: none;
+}
+.sidebar-nav li {
+	display: block;
+	padding: 0 0 2% 0;
+	text-align: right;
+}
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #777 !important;
+    text-transform: uppercase;
+    font-weight: 100 !important;
+    font-size: 1em;
+	font-family: 'Raleway', serif;
+	letter-spacing: 2px;
+}
+.sidebar-nav li a strong {
+	font-weight: 300 !important;
+}
+li.current-page-ancestor a,
+li.current-page-ancestor a strong,
+li.current_page_item a,
+li.current_page_item a strong,
+.sidebar-nav li a.active,
+.sidebar-nav li a:hover {
+    color: #3a8f90 !important;
+    font-weight: 600 !important;
+}
+
+/***** ============================================================================================
+SOCIAL MEDIA  
+============================================================================================ *****/
+
+.socialmedia {
+	text-align: center;
+}
+.socialmedia a {
+	color: #777;
+	cursor: hand;
+}
+
+/***** ============================================================================================
+TRANSLATE FLAGS  
+============================================================================================ *****/
+
+.flags {
+	text-align: center;
+	padding: 0 0 25px 0;
+}
+a.glink {
+	margin: 4px;
+}
+
+/***** ============================================================================================
+MOBILE ONLY  
+============================================================================================ *****/
+
+@media screen and (max-width:767px) {
+	#sidebar-wrapper .button {
+		padding: 5px 14px;
+		float: left;
+		margin: 0 5px 0 0;
+	}
+	.socialmedia { 
+		display: table; 
+		width: 100%; 
+		padding: 10px 0 0 0;
+	}
+	.socialmedia .row {
+		display: table-cell;
+		text-align: center;
+		width: 60%;
+	}
+	.socialmedia .row:nth-child(2) {
+		width: 40%;		
+	}
+	.socialmedia a {
+		text-align: center;
+		display: table;
+		float: left;
+		width: 33%;
+	}
+	.socialmedia .row:nth-child(2) a {
+		width: 50%;
+	}
+}
+
+/***** ============================================================================================
+MIDSIZE MOBILE AND UP  
+============================================================================================ *****/
+
+@media(min-width:475px) {
+
+	#sidebar-wrapper {
+		width: 50%;
+	}
+	
+}
+
+
+
+/***** ============================================================================================
+LARGE MOBILE AND UP  
+============================================================================================ *****/
+
+
+@media(min-width:768px) {
+	#nav-bttn {
+	    position: absolute;
+		top: 25px;
+		right: 25px;
+	}
+	.mobile-logo {
+    	top: 25px;
+    	left: 25px;
+	}
+    body:not(.home) #page-content-wrapper {
+		padding-left: 25%;
+	}
+    body:not(.home) #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+		padding-left: 15px;
+    }
+	.sidebar-nav {
+		margin: 50px auto;
+	    padding: 0 4% 0 0;
+	}
+	.sidebar-nav li { padding: 0 0 6% 0; }
+	.sidebar-nav li a {
+	    font-size: 1.25em;
+	}
+	#sidebar-wrapper .button { margin: 0 auto 10px auto; float: none; display: table; }
+	#sidebar-wrapper .socialmedia { margin: 50px auto 25px; display: block; }
+	.flags { margin: 50px auto; }	
+	.socialmedia .row, .socialmedia .row:nth-child(2) {
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.socialmedia a, .socialmedia .row:nth-child(2) a {
+		text-align: center;
+		display: inline-block;
+		float: none;
+		width: auto;
+		font-size: 20px;
+		margin: 0 20px 15px 20px;
+		color: #999 !important;
+	}
+	#sidebar-wrapper {
+		width: 40%;
+		padding: 50px 7%;
+	}	
+}
+
+/***** ============================================================================================
+TABLET AND UNDER  
+============================================================================================ *****/
+
+@media only screen and (max-width: 960px) {
+	ul.filter {
+		display: none !important;
+	}
+	.option-combo {
+		display: block;
+		width: 100%;
+	}
+	
+}
+
+/***** ============================================================================================
+TABLET AND UP   
+============================================================================================ *****/
+
+@media only screen and (min-width: 960px) {
+	
+    body:not(.home) #page-content-wrapper {
+        padding: 15px;
+        position: relative;
+		padding-top: 0;
+		padding-right: 5%;
+	    padding-left: 0;
+    }	
+	.logo {
+		float: none;
+		top: 0;
+	}
+/*	body:not(.home) #wrapper.toggled #sidebar-wrapper {
+		overflow: visible;
+	}*/
+	body:not(.home) #wrapper.toggled .logo,
+	body:not(.home) #wrapper.toggled .logo,
+	body:not(.home) #wrapper #sidebar-wrapper,
+	body:not(.home) #wrapper.toggled #sidebar-wrapper {
+	    -webkit-transform: translateX(0%);
+	    transform: translateX(0%);
+	}
+	body:not(.home) #wrapper.toggled #sidebar-wrapper,
+	body:not(.home) #sidebar-wrapper {
+		width: 35%;
+		padding: 25px 2%;
+	}
+	body:not(.home) #page-content-wrapper,
+	body:not(.home) #wrapper.toggled #page-content-wrapper {
+	    padding-left: 39%;
+	}
+	#nav-bttn,
+	.mobile-logo {
+		display: none;
+	}
+	#wrapper.toggled #sidebar-wrapper {
+		overflow-y: scroll;
+		position: fixed;
+	}
+	body.home #sidebar-wrapper {
+		-webkit-transform: translateX(-100%);
+		transform: translateX(-100%);
+	}
+	
+}
+
+/***** ============================================================================================
+LAPTOP  
+============================================================================================ *****/
+
+@media screen and (min-width: 1000px) {
+	h2.page-title {
+		font-size: 2.5em;
+	}
+	body:not(.home) #wrapper.toggled #sidebar-wrapper,
+	body:not(.home) #sidebar-wrapper {
+		width: 25%;
+		padding: 25px 2% 50px 2%;
+	}
+	body:not(.home) #page-content-wrapper,
+	body:not(.home) #wrapper.toggled #page-content-wrapper {
+	    padding-left: 25%;
+	}
+}
+
+/***** ============================================================================================
+DESKTOP  
+============================================================================================ *****/
+
+@media(min-width: 1500px) {
+
+	body:not(.home) #wrapper.toggled #sidebar-wrapper,
+	body:not(.home) #sidebar-wrapper {
+		width: 20%;
+	}
+	body:not(.home) #page-content-wrapper,
+	body:not(.home) #wrapper.toggled #page-content-wrapper {
+	    padding-left: 20%;
+	}
+	
+
+}
