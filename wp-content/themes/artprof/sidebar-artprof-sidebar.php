@@ -76,7 +76,7 @@ if ( function_exists('bp_loggedin_user_id') && bp_loggedin_user_id() ) {	?>
 							
 							<div class="clear-xs"></div>
 								<div class="sitecredits">
-							&copy; <?php echo date('Y'); ?> ArtProf. All rights reserved.<br /><a href="/terms-and-conditions">Site Disclaimer</a>. Art Prof is not supported, endorsed, or sponsored by RISD.<br /><br />Site by <a href="http://thelibzter.com" title="Website design and development by Libby Fisher" target="_blank">Libby Fisher</a>.
+							&copy; <?php echo date('Y'); ?> ArtProf. All rights reserved.<br /><a href="/terms-and-conditions">Site Disclaimer</a>. Art Prof is not supported, endorsed, or sponsored by RISD.<br />.
 						
 							</div>
 							

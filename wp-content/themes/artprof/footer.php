@@ -1,12 +1,11 @@
 </div><!-- end of #page-content-wrapper -->
 
 <?php if(is_front_page()) { ?>
-<div class="sitecredits">&copy; <?php echo date('Y'); ?> ArtProf. All rights reserved. <a href="/terms-and-conditions">Site Disclaimer</a>.<br /><!-- Art Prof is not supported, endorsed, or sponsored by RISD.<br /><br />Site by <a href="http://thelibzter.com" title="Website design and development by Libby Fisher" target="_blank">Libby Fisher</a>.--></div>
+<div class="sitecredits">&copy; <?php echo date('Y'); ?> ArtProf. All rights reserved. <a href="/terms-and-conditions">Site Disclaimer</a>.<br /></div>
 <?php } ?>
 
 </div><!-- end of #wrapper -->
 
-	<!-- SCRIPTS -->
 
 <?php if(!is_front_page()) { ?>
 <!-- Social Icons -->

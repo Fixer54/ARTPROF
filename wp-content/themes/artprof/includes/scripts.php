@@ -141,19 +141,6 @@
 
 	jQuery(function(){
 	
-	// 	jQuery.fn.focusWithoutScrolling = function(){
-	// 	  var x = jQuery(document).scrollLeft(), y = jQuery(document).scrollTop();
-	// 	  this.focus();
-	// 	  window.scrollTo(x, y);
-	// 	  return this; //chainability
-	// 	};
-	//
-	// function setFocus() {
-	// 		// jQuery("form:not(#commentform)").first().find(":input:not(input[type=button],input[type=submit],button):visible:first").focus();
-	// 		jQuery("form:not(#commentform)").first().find(":input:not(input[type=button],input[type=submit],button):visible:first").focusWithoutScrolling()
-	// }
-	// setFocus();
-	
 	   jQuery('#preload').fadeIn();
 	   jQuery('#ajax-loader').hide();
 
@@ -226,7 +213,6 @@
 
 
 	  <?php if(is_page('Courses')) { ?>
-//		  var filterList = '<?php echo do_shortcode('[artprof_cp_categories posttype="course"]'); ?>';
 		var filterList = '<?php echo do_shortcode('[artprof_cp_categories]'); ?>';
 	  <?php } else { ?>
 		  var filterList = '<?php echo do_shortcode('[artprof_cp_categories]'); ?>';
@@ -330,16 +316,15 @@
 		e.preventDefault();
 		jQuery(".nopoststoshow").removeClass("activated");			
 	    var thisTarget = e.target;
-	    if ( jQuery(thisTarget).hasClass('selected') ) { 	    // don't proceed if already selected
-	    //	toggleSelected(thisTarget);
+	    if ( jQuery(thisTarget).hasClass('selected') ) { 	    
 		  	return;
 	   }	   
-	    var optionSet = jQuery(thisTarget).parents('.option-set'); //ul
-	    var optionSelected = jQuery(optionSet).find('.selected'); // active items
+	    var optionSet = jQuery(thisTarget).parents('.option-set'); 
+	    var optionSelected = jQuery(optionSet).find('.selected'); 
 		jQuery(optionSelected).each(function() {
 			jQuery(this).removeClass("selected cbp-filter-item-active");
 		});
-	    jQuery(thisTarget).addClass('selected'); // mark this option as selected
+	    jQuery(thisTarget).addClass('selected'); 
 			    return false;
     });
 	
@@ -366,19 +351,8 @@
 	  wrapper.removeClass('list').addClass('grid');  	  
 	  destroyPortfolio();
 	  cubePortfolio();	  
- 	}); // end of grid button click
+ 	}); 
 		
-  }); //end of doc ready
+  }); 
   
 </script>
-
-
-
-
-
-
-
-
-
-
-		

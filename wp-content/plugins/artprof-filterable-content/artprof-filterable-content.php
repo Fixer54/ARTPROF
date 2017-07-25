@@ -2,10 +2,10 @@
 /*
 Plugin Name: ArtProf Filterable Content Shortcode
 Plugin URI: http://artprof.org
-Description: Creates beautiful filterable layouts of any post type via shortcode.
+Description: Creates filterable layouts of any post type via shortcode.
 Version: 1.0
 Author: TheLibzter
-Author URI: http://thelibzter.com
+Author URI: http://artprof.com
 */
 
 
@@ -34,7 +34,6 @@ function artprof_filterable_content_func( $atts ) {
 			'post_type'      => $thisPostType,
 	    	'posts_per_page' => -1,
 	    	'order'          => 'DESC',
-//	    	'orderby'        => 'menu_order'
 			'orderby'        => 'date'
 		);
 	} else {
@@ -43,12 +42,11 @@ function artprof_filterable_content_func( $atts ) {
 	    	'posts_per_page' => -1,
 	    	'post_parent'    => $post->ID,
 	    	'order'          => 'DESC',
-	    	// 'orderby'        => 'menu_order'
 			'orderby'        => 'date'
 			
 		);
 	}
-	$the_query = new WP_Query( $args ); //Check the WP_Query docs to see how you can limit which posts to display 
+	$the_query = new WP_Query( $args ); 
 	
 	if ( $the_query->have_posts() ) :
 		
@@ -60,10 +58,10 @@ function artprof_filterable_content_func( $atts ) {
 		if($thisPostType === 'course') {
 			$termsArray = get_the_terms($post->ID, 'course-cat');
 		} else {
-	 		$termsArray = get_the_category();  //returns an array of IDs for this posts categories					
+	 		$termsArray = get_the_category(); 					
 		}
 		
-	 	foreach ( $termsArray as $term ) { // for each category
+	 	foreach ( $termsArray as $term ) {
 			$thisTerm = $term->name;
 			if($thisPostType === 'course') {
 			$category_parent_id = $term->parent; 
@@ -77,9 +75,9 @@ function artprof_filterable_content_func( $atts ) {
 	        $a[]=$thisTerm;
 	        }
 	 	}
-		 $termsString = ""; //initialize the string that will contain the terms
-	 	foreach ( $termsArray as $term ) { // for each term			
-	 	   $termsString .= ' filter-' . $term->slug.' '; //create a string that has all the slugs
+		 $termsString = ""; 
+	 	foreach ( $termsArray as $term ) { 		
+	 	   $termsString .= ' filter-' . $term->slug.' ';
 	 	}
 	 	$output .= '<div class="cbp-item' . $termsString . '">';
 		
@@ -123,7 +121,6 @@ function artprof_filterable_content_func( $atts ) {
 	    $filters .= '<ul class="filter option-set clearfix" data-filter-group="' .$parent.'"> ';
 	     $filters .= '<li><div data-filter="" data-class="any" class="cbp-filter-item selected">All</div></li>';
 			
-		//loop through children
 		$current_cat_id = $c;
 
 		if($thisPostType === 'course') {
@@ -146,7 +143,7 @@ function artprof_filterable_content_func( $atts ) {
 		$filters .= '</ul></div></div>';
 	
 				
-	}	// end of foreach top level category	
+	}		
 
 	wp_reset_query();
 	
@@ -158,7 +155,6 @@ function artprof_filterable_content_func( $atts ) {
 		$grid = " on";
 	}
 	$filters .= '<div class="row view-toggle"><div class="col-sm-12">';
-	//$filters .= '<button class="list-view'.$list.'"><i class="fa fa-bars"></i></button><button class="grid-view'.$grid.'"><i class="fa fa-th"></i></button>';
 	$filters .= '</div></div>';
 	
   	 $preloader = '<div id="ajax-loader"><img src="http://preloaders.net/preloaders/290/preview.gif" /></div>';			
@@ -185,8 +181,7 @@ function artprof_cp_categories_func($atts) {
 	global $post;
 	$filterlist = '';
 	$toplevel = array();	
-	$a=array(); // array to hold categories in
-	// $thisPostType = get_post_type();
+	$a=array(); 
 	
 	if($thisPostType === 'course') {
 		$args = array(
@@ -206,20 +201,20 @@ function artprof_cp_categories_func($atts) {
 		);		
 	}
 	
-	$the_query = new WP_Query( $args ); //Check the WP_Query docs to see how you can limit which posts to display 
+	$the_query = new WP_Query( $args );  
 	
 	if ( $the_query->have_posts() ) :
 	 while ( $the_query->have_posts() ) : $the_query->the_post();
 	if($thisPostType === 'course') {
 		$termsArray = get_the_terms($post->ID, 'course-cat');
 	} else {
- 		$termsArray = get_the_category();  //returns an array of IDs for this posts categories					
+ 		$termsArray = get_the_category();  				
 	}
 	 
-	 	foreach ( $termsArray as $term ) { // for each category
+	 	foreach ( $termsArray as $term ) { 
 			$thisTerm = $term->slug;
 			if($thisPostType === 'course') {
-			$category_parent_id = $term->parent; //not returnng category id on course page
+			$category_parent_id = $term->parent; 
 				} else {
 					$category_parent_id = $term->category_parent; 
 				}
@@ -236,7 +231,6 @@ function artprof_cp_categories_func($atts) {
 	
 	
 	foreach($toplevel as $c){
-		//loop through children
 		if($thisPostType === 'course') {
 			$category_parent = get_term($c, 'course-cat');						
 		} else {
@@ -245,9 +239,9 @@ function artprof_cp_categories_func($atts) {
 	    $parent = $category_parent->slug;				
 		$filterlist .= '#' . $parent;
 		if(end($toplevel) !== $c){
-		  $filterlist .= ', '; // not the last element
+		  $filterlist .= ', '; 
 		}
-	}	// end of foreach top level category	
+	}	
 	wp_reset_query();
 	return $filterlist;
 }
@@ -260,7 +254,6 @@ add_shortcode( 'artprof_cp_categories', 'artprof_cp_categories_func' );
 
 
 function artprof_curriculum_func() {
-    /* The template for displaying Course Curriculum */
 
    global $post;
    $id= get_the_ID();
