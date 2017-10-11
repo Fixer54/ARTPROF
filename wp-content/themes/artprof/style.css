@@ -1,6 +1,6 @@
 /*
 Theme Name: ArtProf Theme
-Theme URI: http://www.artprof.org    
+Theme URI: http://www.artprof.org
 Description: Child Theme for WPLMS WordPress Theme
 Author: VibeThemes
 Author URI: http://themeforest.com/user/vibethemes
@@ -98,7 +98,7 @@ header #searchform input[type="text"]{
 	background:rgba(0,0,0,0.6) !important;
 	color:#FFF !important;
 	border-radius:0;
-	padding: 16px;}	
+	padding: 16px;}
 header #searchdiv {
 	float: none;
 	padding: 0;
@@ -150,7 +150,7 @@ header #searchdiv {
 .block.modern_course .course_meta i{
   font-size: 16px;
   float: left;
-  margin-right: 5px;	
+  margin-right: 5px;
 }
 .block.modern_course .course_meta strong{
   float: right;
@@ -201,7 +201,7 @@ header #searchdiv {
 }
 .pmpro_pricing_table>li.current a{
 	background:#FF6600;
-} 
+}
 .pmpro_pricing_table>li>ul li h2{margin:0;font-size:14px;font-weight:600;text-transform: uppercase;}
 
 span.pmpro_price:before {
@@ -254,27 +254,57 @@ footer .stat_num strong{border-color:rgba(255,255,255,0.1);}
 /*==========================================================================================*/
 
 @media (max-width: 767px){
-.topmenu{
-  display: inline-block;
-  position: absolute;
-  top: 45px;
-  right: 120px;
-  padding: 0 !important;
-}
-.smallimg.vbplogin span {
-  display: none;
-}
-.pmpro_pricing_table>li{width:100%;}
-header #searchicon{
-  top: 42px;
-  padding: 0 !important;
-}
-.moderntabs .nav.nav-tabs > li > a{
-border:2px solid #222;border-bottom:none;
-}
-.moderntabs .nav.nav-tabs > li:last-child > a{
-border:2px solid #222;
+	.topmenu{
+	  display: inline-block;
+	  position: absolute;
+	  top: 45px;
+	  right: 120px;
+	  padding: 0 !important;
+	}
+	.smallimg.vbplogin span {
+	  display: none;
+	}
+	.pmpro_pricing_table>li{width:100%;}
+	header #searchicon{
+	  top: 42px;
+	  padding: 0 !important;
+	}
+	.moderntabs .nav.nav-tabs > li > a{
+		border:2px solid #222;border-bottom:none;
+	}
+	.moderntabs .nav.nav-tabs > li:last-child > a{
+		border:2px solid #222;
+	}
+
+	/* Update comments for small screen*/
+		/* Hide avatar*/
+		.comment-avatar {
+			display: none;
+		}
+
+		/* comment body full width - thanks to WP nesting for the complicated chain */
+		.page #comments ol.commentlist li .comment-body .comment-body-inner .comment-body-content,
+		.single #comments ol.commentlist li .comment-body .comment-body-inner .comment-body-content
+		{
+			margin-left: 0;
+		}
+
+		/* hide gray arrow - thanks to WP nesting for the complicated chain */
+		.page #comments ol.commentlist li .comment-body .comment-body-inner .comment-body-content:after,
+		.single #comments ol.commentlist li .comment-body .comment-body-inner .comment-body-content:after
+		{
+			display: none;
+		}
+
+		/* Set comment meta content to new lines - thanks to WP nesting for the complicated chain */
+		.page #comments ol.commentlist li .comment-body .comment-body-inner .comment-body-content .comment-meta a,
+		.single #comments ol.commentlist li .comment-body .comment-body-inner .comment-body-content .comment-meta a
+		{
+			display: block;
+			margin-left: 0px;
+		}
 }
 
+/*@media screen and (min-width: 767px) {*/
 
-
+/*}*/
