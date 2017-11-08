@@ -76,9 +76,9 @@ if ( function_exists('bp_loggedin_user_id') && bp_loggedin_user_id() ) {	?>
 
 <div class="clear-xs"></div>
 	<div class="sitecredits">
-		&copy; <?php echo date('Y'); ?> ArtProf. All rights reserved.<br />
-    <a href="/terms-and-conditions">Site Disclaimer</a>.<br />
-    Art Prof is not supported, endorsed, or sponsored by RISD.<br />
+		&copy; <?php echo date('Y'); ?> ArtProf. All rights reserved.
+    <a href="/terms-and-conditions">Site Disclaimer</a>.
+    Art Prof is not supported, endorsed, or sponsored by RISD or WGBH.<br />
     Digital Partner: <a href="https://cantina.co/" target="_blank">Cantina.co</a><br />
 	</div>
 </div>
