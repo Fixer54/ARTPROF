@@ -48,7 +48,10 @@ document.write(unescape("%3Cscript src='" + tlJsHost + "trustlogo/javascript/tru
 	<?php if(is_front_page()) { ?>
 		
 		<div class="header container">
-			<img src="/wp-content/uploads/2017/01/logo-home.png" alt="ArtProf" />
+
+            <img srcset="/wp-content/themes/artprof/img/artprof_logo_home@1x.png,
+            /wp-content/themes/artprof/img/artprof_logo_home@2x.png 2x" src="/wp-content/themes/artprof/img/artprof_logo_home@1x.png" alt="ArtProf">
+
             <?php
 
                 $args = apply_filters('wplms-main-menu',array(
