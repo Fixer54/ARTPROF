@@ -17,8 +17,7 @@
 	<li><a class="twittershare" href="javascript:" onclick="window.open('//twitter.com/share?url=<?php echo the_permalink();?>&amp;text=<?php echo social_share_excerpt();?>','_blank','width=800,height=300')" title="Share On Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 	<li><a class="pinterestshare" onclick="window.open('//pinterest.com/pin/create/button/?url=<?php echo the_permalink();?>&amp;media=<?php if ( has_post_thumbnail() ) { echo get_the_post_thumbnail_url(); } else { echo '/wp-content/uploads/2017/01/logo.png'; } ?>&amp;description=<?php echo social_share_excerpt(); ?>','pinIt','toolbar=0,status=0,width=800,height=500');" href="javascript:void(0);" title="Share On Pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
 </ul>
-	<?php }?>	
-	
+<?php }?>
 	
 <?php
 wp_footer(); 
