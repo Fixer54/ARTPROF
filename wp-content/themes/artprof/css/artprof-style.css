@@ -513,7 +513,7 @@ body.home .sitecredits {
 HEADINGS
 ============================================================================================ *****/
 
-h1, h2, h3, h4, h5, h6 { font-family: 'Raleway',inherit;}
+h1, h2, h3, h4, h5, h6 { font-family: 'Raleway', sans-serif;}
 
 body h1 {
     font-weight: 100;

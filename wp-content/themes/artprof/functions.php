@@ -26,18 +26,12 @@ function wplms_hide_admin_for_non_logged_in($status){
 //	wp_enqueue_script( 'child-custom-js', get_stylesheet_directory_uri().'/custom.js',array('jquery'));		
 //}
 
-function artprof_theme_name_scripts() {
-	wp_enqueue_style( 'artprof-css', get_stylesheet_directory_uri().'/style.css');		
+function artprof_theme_name_scripts() {	
 	wp_enqueue_style( 'artprof-cubeportfolio', get_stylesheet_directory_uri() . '/css/cubeportfolio.css');
-	//wp_enqueue_style( 'artprof-toggle-sidebar', get_stylesheet_directory_uri() . '/css/toggle-sidebar.css');
 	wp_enqueue_style( 'artprof-style', get_stylesheet_directory_uri() . '/css/artprof-style.css');
 	wp_enqueue_script( 'artprof-custom-js', get_stylesheet_directory_uri().'/custom.js',array('jquery', '1.0.0', true));	
 }
 add_action( 'wp_enqueue_scripts', 'artprof_theme_name_scripts' );
-
-
-
-
 
 add_action('wplms_customizer_custom_css','wplms_child_customizer_custom_css',10,1);
 function wplms_child_customizer_custom_css($customizer){
