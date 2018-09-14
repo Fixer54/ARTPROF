@@ -6,21 +6,9 @@
 
  <div id="sidebar-wrapper">
 
-                            <a href="<?php echo vibe_site_url(); ?>" class="logo"><img id="logo_img" src="<?php  echo apply_filters('wplms_logo_url',VIBE_URL.'/images/logo.png'); ?>" alt="<?php echo get_bloginfo('name'); ?>" />
-                            <img src="<?php  $logo = vibe_get_option('logo_fixed');
-                                if(isset($logo) && $logo)
-                                    $url = $logo;
-
-                                if(is_ssl()){
-                                    if (substr($url, 0, 7) == "http://")
-                                        $url = str_replace('http','https',$url);
-                                }
-
-                                if(isset($url))
-                                    echo $url;
-                                else
-                                    echo apply_filters('wplms_logo_url',VIBE_URL.'/images/logo.png');
-                                 ?>" id="fixed_logo" alt="<?php echo get_bloginfo('name'); ?>" /></a>
+                            <a href="<?php echo vibe_site_url(); ?>" class="logo">
+                                <img id="logo_img" src="<?php  echo apply_filters('wplms_logo_url',VIBE_URL.'/images/logo.png'); ?>" alt="<?php echo get_bloginfo('name'); ?>" />
+                            </a>
                         <?php
 
                             $args = apply_filters('wplms-main-menu',array(
