@@ -3,7 +3,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="msvalidate.01" content="0CF7EC995E7AD3FD2A4E229865108D8F" />
-
+<link rel="shortcut icon" href="https://s3.amazonaws.com/artprofmedia/wp-content/uploads/2018/04/13154948/cropped-redswoosh-32x32.png">
 <title>
 <?php echo wp_title('|',true,'right'); ?>
 </title>
