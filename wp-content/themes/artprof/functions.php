@@ -523,7 +523,7 @@ if(!function_exists('social_share_excerpt')) {
     $excerpt_word_array = array_slice ($excerpt_word_array, 0, $word_count);
     $excerpt = implode (' ', $excerpt_word_array).'...'; 
 	$excerpt = htmlspecialchars($excerpt); // escape quotation marks
-	$excerpt = trim(preg_replace('/\s\s+/', ' ', $excerpt)); //remove line breaks
+	$excerpt = trim(preg_replace('/\r|\n/', ' ', $excerpt)); //remove line breaks
 	echo ''.$excerpt.'';
   }
 }
