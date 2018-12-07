@@ -3,7 +3,13 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="msvalidate.01" content="0CF7EC995E7AD3FD2A4E229865108D8F" />
-<link rel="shortcut icon" href="https://s3.amazonaws.com/artprofmedia/wp-content/uploads/2018/04/13154948/cropped-redswoosh-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/artprof/img/favicon_package/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/wp-content/themes/artprof/img/favicon_package/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/wp-content/themes/artprof/img/favicon_package/favicon-16x16.png">
+<link rel="manifest" href="/wp-content/themes/artprof/img/favicon_package/site.webmanifest">
+<link rel="mask-icon" href="/wp-content/themes/artprof/img/favicon_package/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 <title>
 <?php echo wp_title('|',true,'right'); ?>
 </title>
